@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>VueJS Dad Joke Fetcher</h1>
     <div id="joke">{{this.joke.joke}}</div>
     <button v-on:click="fetchJoke">Fetch Joke</button>
   </div>
@@ -35,10 +36,17 @@ export default {
 
 <style scoped>
 button {
+  cursor: pointer;
   margin-top: 0.7em;
-  padding: 0.5em;
-  font-size: 0.8em;
+  padding: 0.6em;
+  font-size: 1em;
   border-radius: 5px;
+  background-color: #41b783;
+  color: #fff;
+}
+
+button:focus {
+  outline: 0;
 }
 
 #joke {

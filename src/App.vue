@@ -1,26 +1,28 @@
 <template>
   <div id="app">
+    <Navbar />
     <img alt="Vue logo" src="./assets/logo.png" />
-    <h1>VueJS Dad Joke Fetcher</h1>
-    <Joke />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Joke from "./components/Joke";
+import Navbar from "./components/Layout/Navbar";
 export default {
   name: "App",
-  components: { Joke }
+  components: {
+    Navbar
+  }
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
