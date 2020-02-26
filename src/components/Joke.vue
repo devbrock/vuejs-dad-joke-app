@@ -16,7 +16,7 @@ export default {
       joke: {}
     };
   },
-  created() {
+  mounted() {
     this.fetchJoke();
   },
   methods: {
